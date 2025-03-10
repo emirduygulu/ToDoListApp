@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fff;
+}
+
+header{
+  background-color: lightblue;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.todoDiv{
+  padding: 15px;
+  width: 300px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.todoDivArea{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.todoButton{
+  width: 100px;
+}
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: #031124 !important;
+}
+.task-container, .process-list-container, .completed-list-container {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.process-list-container::-webkit-scrollbar,
+.completed-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.process-list-container::-webkit-scrollbar-track,
+.completed-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.process-list-container::-webkit-scrollbar-thumb,
+.completed-list-container::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.task-item:hover {
+  background-color: #f8f9fa;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+.completed-list-container .task-item {
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.completed-list-container .task-item:hover {
+  opacity: 1;
+}
